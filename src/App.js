@@ -29,7 +29,7 @@ function App() {
         max_tokens: 1000,
         frequency_penalty: 0.8
       }),
-    };
+    }
 
     const response = await fetch(process.env.REACT_APP_API_URL, options);
 

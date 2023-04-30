@@ -20,6 +20,8 @@ function App() {
       method: 'POST',
       headers:{
         'Content-Type' : 'application/json',
+        "Access-Control-Allow-Origin" : "*", 
+        "Access-Control-Allow-Credentials" : true ,
         Authorization : `Bearer ${process.env.REACT_APP_API_KEY}`
       },
       body:JSON.stringify({
